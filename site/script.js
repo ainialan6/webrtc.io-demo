@@ -180,7 +180,7 @@ function init() {
       "video": {"mandatory": {}, "optional": []},
       "audio": true
     }, function(stream) {
-      document.getElementById('you').src = URL.createObjectURL(stream);
+      document.getElementById('you').srcObject = stream;
       document.getElementById('you').play();
       //videos.push(document.getElementById('you'));
       //rtc.attachStream(stream, 'you');
