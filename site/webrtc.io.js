@@ -377,7 +377,7 @@ if (navigator.webkitGetUserMedia) {
       element.mozSrcObject = stream;
       element.play();
     } else {
-      element.src = webkitURL.createObjectURL(stream);
+      element.srcObject = stream;
     }
   };
 
